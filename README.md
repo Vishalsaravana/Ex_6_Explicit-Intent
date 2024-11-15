@@ -36,21 +36,15 @@ Registeration Number : 212222040181
 */
 ```
 
-
-
 ### Main activity.java:
 ```
 package com.example.ex6;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.content.Intent;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 public class MainActivity extends AppCompatActivity {
     EditText e1;
     Button res;
@@ -86,9 +80,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.widget.TextView;
-
-
-
 public class SecondActivity extends AppCompatActivity {
     TextView t1;
     @Override
@@ -114,8 +105,6 @@ public class SecondActivity extends AppCompatActivity {
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible">
-
-
     <TextView
         android:id="@+id/textview"
         android:layout_width="248dp"
@@ -133,7 +122,6 @@ public class SecondActivity extends AppCompatActivity {
         app:layout_constraintVertical_bias="0.671"
         tools:layout_editor_absoluteX="97dp"
         tools:layout_editor_absoluteY="175dp" />
-
     <EditText
         android:id="@+id/editTextPersonName"
         android:layout_width="wrap_content"
@@ -146,7 +134,6 @@ public class SecondActivity extends AppCompatActivity {
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.671" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -158,7 +145,6 @@ public class SecondActivity extends AppCompatActivity {
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.622" />
-
 </android.support.constraint.ConstraintLayout>
 ```
 ### activity second.xml:
@@ -171,7 +157,6 @@ public class SecondActivity extends AppCompatActivity {
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="147dp"
@@ -186,7 +171,6 @@ public class SecondActivity extends AppCompatActivity {
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.447" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -212,7 +196,6 @@ public class SecondActivity extends AppCompatActivity {
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ex6">
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -228,13 +211,11 @@ public class SecondActivity extends AppCompatActivity {
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
             <activity android:name=".SecondActivity" />
     </application>
-
 </manifest>
 ```
 ## OUTPUT:
